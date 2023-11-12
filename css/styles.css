@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green: rgb(150, 205, 67);
+    --black: rgb(23, 23, 23);
+    --white: rgb(255, 255, 255);
+    --gray: #8A8A8A;
+    --dark-gray: #505050;
+}
+.spotify-current-song{
+    background-color: var(--black);
+    width: 100%;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.spotify-current-song button{
+    background: none;
+    color: var(--white);
+    border: none;
+}
+.spotify-current-song button i{
+    font-size: 18px;
+}
+.spotify-current-song-data{
+    display: flex;
+    align-items: center;
+}
+.spotify-current-song-image{
+    width: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 4px;
+}
+.spotify-reproductor-current-song-info{
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.spotify-current-song-name{
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.spotify-current-song-Artiste{
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+.spotify-current-song-like{
+    color: var(--green);
+}
+.spotify-reproductor{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+.spotify-reproductor-controls{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.spotify-reproductor-controls i{
+    color: var(--gray);
+    transition: .2s;
+}
+.spotify-reproductor-controls :hover{
+    color: var(--white);
+    transition: .2s;
+}
+.spotify-reproductor-controls-play{
+    background-color: var(--white);
+    padding: 12px 11px 12px 13px;
+    color: var(--black);
+    border: solid 2px var(--white);
+    border-radius: 50%;
+}
+i.spotify-reproductor-controls-play{
+    color: var(--black);
+}
+i.spotify-reproductor-controls-play:hover{
+    color: var(--black);
+}
+.spotify-reproductor-controls-play:active{
+    border: solid 2px var(--black);
+}
+.spotify-reproductor-timeline{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.spotify-reproductor-timeline p{
+    width: 40px;
+    display: flex;
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+.spotify-reproductor-timeline-current-time{
+    justify-content: flex-end;
+}
+.spotify-reproductor-timeline-total-time{
+    justify-content: flex-start;
+}
+.spotify-reproductor-timeline-input{
+    background: none;
+    width: 100%;
+}
+.spotify-reproductor-timeline-input::-moz-range-track{
+    background-color: var(--dark-gray);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+}
+.spotify-reproductor-timeline-input::-moz-range-thumb{
+    background-color: var(--white);
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+}
+.spotify-reproductor-timeline-input::-moz-range-progress{
+    background-color: var(--green);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+}
+.spotify-reproductor-options{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

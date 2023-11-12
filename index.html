@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="spotify-current-song">
+        <div class="spotify-current-song-data">
+            <img src="https://lh3.googleusercontent.com/d_T3L3Ed5ynZLMVs0Ely4aqTfBZ-y9P9azzlLuKvT2re1QQuxqTxRPoSv082zBOBWmXZZRZKqIFbR7YI=w544-h544-l90-rj" alt="" class="spotify-current-song-image">
+            <div class="spotify-reproductor-current-song-info">
+                <p class="spotify-current-song-name">Red Taylor's Version</p>
+                <p class="spotify-current-song-Artiste">Taylor Swift</p>
+            </div>
+            <button>
+                <i class="fa-solid fa-heart spotify-current-song-like"></i>
+            </button>
+        </div>
+        <div class="spotify-reproductor">
+            <div class="spotify-reproductor-controls">
+                <button>
+                    <i class="fa-solid fa-shuffle spotify-reproductor-controls-shuffle"></i>
+                </button>
+                <button>
+                    <i class="fa-solid fa-backward spotify-reproductor-controls-backward"></i>
+                </button>
+                <button>
+                    <i class="fa-solid fa-play spotify-reproductor-controls-play"></i>
+                </button>
+                <button>
+                    <i class="fa-solid fa-forward spotify-reproductor-controls-forward"></i>
+                </button>
+                <button>
+                    <i class="fa-solid fa-repeat spotify-reproductor-controls-repeat"></i>
+                </button>
+            </div>
+            <div class="spotify-reproductor-timeline">
+                <p class="spotify-reproductor-timeline-current-time">0:60</p>
+                <input type="range" min='0' max="100" value="20" class="spotify-reproductor-timeline-input">
+                <p class="spotify-reproductor-timeline-total-time">9:59</p>
+            </div>
+        </div>
+        <div class="spotify-reproductor-options">
+            <button>
+                <i class="fa-solid fa-quote-left spotify-reproductor-options-lyrics"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-table-list spotify-reproductor-options-queue"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-volume-high spotify-reproductor-options-volume"></i>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+<script src="https://kit.fontawesome.com/c650fad659.js" crossorigin="anonymous"></script>
+</html>
